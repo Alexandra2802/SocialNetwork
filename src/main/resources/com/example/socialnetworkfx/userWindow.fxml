@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="951.0" style="-fx-background-color: #CAF4F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkfx.UserController">
+   <children>
+      <AnchorPane prefHeight="567.0" prefWidth="294.0" style="-fx-background-color: #07C6C6;">
+         <children>
+            <Button fx:id="friendsButton" layoutX="30.0" layoutY="292.0" mnemonicParsing="false" onAction="#openFriendsWindow" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #CAF4F4; -fx-background-radius: 30 30 30 30;" text="Friends" textFill="#0b068f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="disconnectButton" layoutX="30.0" layoutY="362.0" mnemonicParsing="false" onAction="#disconnectButtonOnAction" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #CAF4F4; -fx-background-radius: 30 30 30 30;" text="Disconnect" textFill="#0b068f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="userImageView" fitHeight="95.0" fitWidth="102.0" layoutX="31.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/userImage.png" />
+               </image></ImageView>
+            <Label fx:id="fNameLabel" layoutX="130.0" layoutY="82.0" prefHeight="27.0" prefWidth="162.0" text="Fname" textFill="#0b068f">
+               <font>
+                  <Font name="Vivaldi Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lNameLabel" layoutX="130.0" layoutY="150.0" prefHeight="18.0" prefWidth="162.0" text="Lname" textFill="#0b068f">
+               <font>
+                  <Font name="Vivaldi Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="leaveButton" layoutX="30.0" layoutY="432.0" mnemonicParsing="false" onAction="#leaveApp" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #CAF4F4; -fx-background-radius: 30 30 30 30;" text="Leave App" textFill="#0b068f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="usernameLabel" layoutX="36.0" layoutY="23.0" prefHeight="27.0" prefWidth="213.0" text="Username" textFill="#0b068f">
+               <font>
+                  <Font name="Vivaldi Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="#0b068f" layoutX="361.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chats">
+         <font>
+            <Font name="Vivaldi Italic" size="40.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="296.0" layoutY="82.0" prefHeight="477.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="fromColumn" prefWidth="128.0" text="from" />
+            <TableColumn fx:id="toColumn" prefWidth="123.0" text="to" />
+            <TableColumn fx:id="dateColumn" prefWidth="161.0" text="date" />
+            <TableColumn fx:id="textColumn" prefWidth="237.0" text="text" />
+         </columns>
+      </TableView>
+      <Button fx:id="sendMessageButton" layoutX="662.0" layoutY="20.0" mnemonicParsing="false" onAction="#openSendMessageWindow" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #07C6C6; -fx-background-radius: 30 30 30 30;" text="Send message" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

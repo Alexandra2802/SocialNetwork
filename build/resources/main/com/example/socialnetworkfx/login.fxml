@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkfx.Controller">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #07C6C6;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#0b068f" layoutX="57.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pet's Time">
+               <font>
+                  <Font name="Vivaldi Italic" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="brandingImageView" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/bda5dcde7bea3234a24acef443d277e2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="newUserButton" layoutX="20.0" layoutY="303.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="33.0" prefWidth="191.0" style="-fx-background-color: #CAF4F4; -fx-background-radius: 30 30 30 30;" text="Create new account" textFill="#0b068f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #CAF4F4;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="lockImageView" fitHeight="76.0" fitWidth="74.0" layoutX="148.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/Locked-Cloud-icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="61.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #07C6C6; -fx-background-radius: 30 30 30 30;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="63.0" layoutY="345.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="227.0" style="-fx-background-color: #07C6C6; -fx-background-radius: 30 30 30 30;" text="Leave App" textFill="WHITE">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Text fill="#0b068f" layoutX="25.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#0b068f" layoutX="25.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enterUsernameTextField" layoutX="102.0" layoutY="156.0" prefHeight="26.0" prefWidth="223.0" />
+            <PasswordField fx:id="enterPasswordField" layoutX="102.0" layoutY="204.0" prefHeight="26.0" prefWidth="225.0" />
+            <Label fx:id="loginMessageLabel" layoutX="42.0" layoutY="259.0" textAlignment="CENTER" textFill="#cd0d07">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
