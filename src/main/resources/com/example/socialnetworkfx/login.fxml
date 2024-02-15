@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -11,52 +16,52 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkfx.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkfx.Controller">
    <left>
-      <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #07C6C6;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #2c045a;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="#0b068f" layoutX="57.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pet's Time">
-               <font>
-                  <Font name="Vivaldi Italic" size="30.0" />
-               </font>
-            </Text>
             <ImageView fx:id="brandingImageView" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Image/bda5dcde7bea3234a24acef443d277e2.jpg" />
+                  <Image url="@../../../Image/interlink-high-resolution-logo-transparent2.png" />
                </image>
             </ImageView>
-            <Button fx:id="newUserButton" layoutX="20.0" layoutY="303.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="33.0" prefWidth="191.0" style="-fx-background-color: #CAF4F4; -fx-background-radius: 30 30 30 30;" text="Create new account" textFill="#0b068f">
+            <Button fx:id="newUserButton" layoutX="32.0" layoutY="303.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="34.0" prefWidth="159.0" style="-fx-background-color: #df6ef5; -fx-background-radius: 30 30 30 30;" text="New account" textFill="#2c045a">
                <font>
-                  <Font name="Serif Regular" size="15.0" />
+                  <Font name="Serif Bold" size="23.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #CAF4F4;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #f5f5f5;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="lockImageView" fitHeight="76.0" fitWidth="74.0" layoutX="148.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Image/Locked-Cloud-icon.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="loginButton" layoutX="61.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #07C6C6; -fx-background-radius: 30 30 30 30;" text="Login" textFill="WHITE">
+<!--            <ImageView fx:id="lockImageView" fitHeight="100.0" fitWidth="97.0" layoutX="148.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../../Image/login-icon.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+            <Text fill="#2c045a" layoutX="148.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
                <font>
-                  <Font name="Serif Regular" size="15.0" />
+                  <Font name="Serif Regular" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="loginButton" layoutX="61.0" layoutY="277.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #2c045a; -fx-background-radius: 30 30 30 30;" text="Login" textFill="#df6ef5">
+               <font>
+                  <Font name="Serif Regular" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="cancelButton" layoutX="63.0" layoutY="345.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="227.0" style="-fx-background-color: #07C6C6; -fx-background-radius: 30 30 30 30;" text="Leave App" textFill="WHITE">
+            <Button fx:id="cancelButton" layoutX="63.0" layoutY="330.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="227.0" style="-fx-background-color: #2c045a; -fx-background-radius: 30 30 30 30;" text="Leave App" textFill="#df6ef5">
                <font>
-                  <Font name="Serif Regular" size="15.0" />
+                  <Font name="Serif Regular" size="20.0" />
                </font>
             </Button>
-            <Text fill="#0b068f" layoutX="25.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+            <Text fill="#2c045a" layoutX="25.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
                <font>
                   <Font name="Serif Regular" size="15.0" />
                </font>
             </Text>
-            <Text fill="#0b068f" layoutX="25.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <Text fill="#2c045a" layoutX="25.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
                <font>
                   <Font name="Serif Regular" size="15.0" />
                </font>
